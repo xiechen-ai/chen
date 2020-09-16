@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: ConfigClient
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8762
+      fail-fast: true
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;DatabaseName=xuesheng
+    username: sa
+    password: 123456a
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
